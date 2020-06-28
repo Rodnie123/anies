@@ -208,9 +208,19 @@ background: linear-gradient(to right, #021B79, #0575E6);
   color: red;
 }
 .h-section-two .calculator-block .main-view {
+  position: relative;
+  z-index: 10;
   padding: 50px;
   padding-bottom: 0;
 }
+.main-view {
+	position: relative;
+	z-index: 10;
+}
+ .graph {
+ 	position: relative;
+ 	z-index: 10;
+ }   
 .h-section-two .calculator-block .calculator-info li img {
     width: 9px;
     margin-right: 3px;
@@ -274,26 +284,23 @@ background: linear-gradient(to right, #021B79, #0575E6);
     display: flex;
 }
 .graph .one {
-    width: 36%;
     background: #ecf1f6;
     height: 100%;
     padding: 11px 30px;
  
 }
  .graph .two {
-    width: 26%;
     background: #e0e5ea;
     height: 100%;
  
 }
 .graph .three {
-    width: 42%;
     padding: 11px 30px;
     color: #fff;
     height: 100%;
     background: #007cff;
     /* background: linear-gradient(to right, #021B79, #0575E6); */
-        margin-right: 50px;
+       /* margin-right: 50px;*/
 }
 .button_medium {
      background: linear-gradient(to right, #021B79, #0575E6) !important;
@@ -546,6 +553,89 @@ background: linear-gradient(to right, #021B79, #0575E6);
     justify-content: space-between;
     overflow: hidden;
 }
+.shade1 {
+    opacity: 0.2;
+}
+.xxlarge {
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+    background: bottom;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.shade2 {
+    opacity: 0.5;
+}
+.xlarge {
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.shade3 {
+    opacity: 0.7;
+}
+.large {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.shade4 {
+    opacity: 0.8;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.shade5 {
+    opacity: 0.9;
+}
+.small {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.ripple-background {
+	    position: absolute;
+    /* top: 143px; */
+    top: 34%;
+    left: 11%;
+}
 img.about-bg2, img.about-bg3, img.about-bg4, img.about-bg5, img.about-bg6, .about-bg div {
     animation-name: bounce-1;
     animation-timing-function: linear;
@@ -597,4 +687,23 @@ canvas {
     100% {
         transform: translateY(0);
     }
+}
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 200px) {
+
+	.d-xs-none {
+		display: none;
+	}
 }
