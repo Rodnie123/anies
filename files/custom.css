@@ -70,7 +70,9 @@ html, body {
 *::after {
   box-sizing: border-box;
 }
-
+body{
+  background-color: transparent !important;
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
