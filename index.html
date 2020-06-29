@@ -43,6 +43,74 @@ dialog{
   max-width: 500px;
 }
 </style>
+<div class="mobile-menu d-none"> 
+
+<div class="text-right"><button class="close-mobile" onclick="showMenu()"> x</button> </div>
+
+<div id="main-menu"  style="position: sticky;top: 0 ;padding: 0 20px 0 20px">
+                <div class="menu-top"><img src="./files/icon-7.png" alt="">  Меню</div>
+                <a href="http://cryptoprizm.pro/?a=home" class="menu-row">
+                    <span class="line"></span>
+                    <span class="name">Главная</span>
+                </a>
+                <a href="http://cryptoprizm.pro/?a=about" class="menu-row">
+                    <span class="line"></span>
+                    <span class="name">О нас</span>
+                </a>
+                <a href="http://cryptoprizm.pro/?a=faq" class="menu-row">
+                    <span class="line"></span>
+                    <span class="name">Вопросы-Ответы</span>
+                </a>
+                <a href="http://cryptoprizm.pro/?a=career" class="menu-row">
+                    <span class="line"></span>
+                    <span class="name">Партнерская карьера</span>
+                </a>
+                <a href="http://cryptoprizm.pro/?a=contacts" class="menu-row">
+                    <span class="line"></span>
+                    <span class="name">Контакты</span>
+                </a>
+
+
+
+                
+ 
+ <a id="side-access" href="http://cryptoprizm.pro/?a=login" style=""><img class="vertical-roll" src="./files/icon-90.png" height="22"> Äîñòóï Aeon <span class="shine"></span><span class="bg-1"></span></a>
+
+
+
+
+
+                                <div class="side-content">
+                    <div class="chart">
+                      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 100%;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="./files/saved_resource.html" style="box-sizing: border-box; height: 100%; width: 100%;"></iframe>
+  <!-- <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BITBAY-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">Êóðñ BTCUSD</span></a> îò TradingView</div> -->
+  
+</div>
+<!-- TradingView Widget END -->
+</div>
+
+<div class="chart">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 100%;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="./files/saved_resource(1).html" style="box-sizing: border-box; height: 100%; width: 100%;"></iframe>
+  <!-- <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/KRAKEN-ETHUSD/" rel="noopener" target="_blank"><span class="blue-text">Êóðñ ETHUSD</span></a> îò TradingView</div> -->
+</div>
+<!-- TradingView Widget END -->
+                    </div>
+
+
+
+                    <!-- <div class="info">
+                        <div class="price">BitCoin Êóðñ: <b>$6,489.73</b></div>
+                        <div class="change">-0.04 $</div>
+                        <div class="percent">+0.00%</div>
+                    </div> -->
+                </div>
+            </div>
+
+ </div>
 <div class="container-fluid top-info-bar text-white">
 	<div class="container">
 		<div class="row p-2"> 
@@ -51,7 +119,14 @@ dialog{
 		</div>
 	</div>
 </div>
+
 <div class="container">	
+          <div class="burger-menu position-absolute right-0 d-lg-none" style="right: 30px;z-index: 998" onclick="showMenu()">
+            <div class="span"></div>
+            <div class="span"></div>
+            <div class="span"></div>
+          </div>
+
 		<div class="row">
         <div class="col-lg-10 ">
             <div class="row">
@@ -757,7 +832,7 @@ function showSlides(n) {
             </div>
         </div>
         
-        <div class="col-lg-2 no-gutters ">
+        <div class="col-lg-2 no-gutters d-xs-none d-lg-block d-sm-none d-md-none">
             <div id="main-menu"  style="position: sticky;top: 0">
                 <div class="menu-top"><img src="./files/icon-7.png" alt="">  Меню</div>
                 <a href="http://cryptoprizm.pro/?a=home" class="menu-row">
@@ -1145,7 +1220,12 @@ function showSlides(n) {
     });
 </script>
 
-
+<script type="text/javascript">
+  function  showMenu() {
+    $('.mobile-menu').toggleClass('d-none');
+    console.log('fdfdfd');
+  }
+</script>
 
 
 
